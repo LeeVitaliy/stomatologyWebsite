@@ -35,7 +35,7 @@ export default function Home() {
         <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Tooth className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl">32 Богатыря</span>
+            <span className="font-bold text-xl">Стоматология</span>
           </div>
           
           <button
@@ -86,7 +86,7 @@ export default function Home() {
               <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
                 Записаться на приём
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white text-black hover:bg-white/10">
                 Узнать стоимость
               </Button>
             </div>
@@ -306,7 +306,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 32 Богатыря. Все права защищены.</p>
+          <p>© 2024 Стоматология. Все права защищены.</p>
         </div>
       </footer>
     </div>
