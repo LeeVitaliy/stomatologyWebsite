@@ -77,7 +77,7 @@ export default function Home() {
             >
               Контакты
             </a>
-            <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity">
+            <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity" onClick={() => document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' })}>
               <Phone className="h-4 w-4 mr-2" />
               Записаться
             </Button>
@@ -97,7 +97,7 @@ export default function Home() {
               передовых технологий и материалов
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" onClick={() => document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' })}>
                 Записаться на приём
               </Button>
               <Button variant="outline" size="lg" className="border-white text-black hover:bg-white/10">
