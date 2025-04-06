@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Stethoscope, Clock, Phone, MapPin, Tooth, Sparkles, Shield, Menu, X } from "lucide-react";
+import { Stethoscope, Clock, Phone, MapPin, Cross, Sparkles, Shield, Menu, X } from "lucide-react";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ export default function Home() {
       <header className="fixed w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
         <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Tooth className="h-6 w-6 text-primary" />
+            <Cross className="h-6 w-6 text-primary" />
             <span className="font-bold text-xl">Стоматология</span>
           </div>
           
@@ -113,7 +113,7 @@ export default function Home() {
               {
                 title: "Лечение кариеса",
                 description: "Современные методы лечения с гарантией результата",
-                icon: <Tooth className="h-6 w-6 text-primary" />
+                icon: <Cross className="h-6 w-6 text-primary" />
               },
               {
                 title: "Профессиональная чистка",
