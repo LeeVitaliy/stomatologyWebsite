@@ -38,10 +38,10 @@ export default function Home() {
       {/* Header */}
       <header className="fixed w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
         <nav className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Cross className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl">Стоматология</span>
-          </div>
+          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => document.getElementById('top')?.scrollIntoView({ behavior: 'smooth' })}>
+  <Cross className="h-6 w-6 text-primary" />
+  <span className="font-bold text-xl">Стоматология</span>
+</div>
           
           <button
             className="lg:hidden"
