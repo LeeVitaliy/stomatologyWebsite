@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Stethoscope, Clock, Phone, MapPin, Bluetooth as Tooth, Sparkles, Shield, Menu, X } from "lucide-react";
+import { Stethoscope, Clock, Phone, MapPin, Tooth, Sparkles, Shield, Menu, X } from "lucide-react";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
