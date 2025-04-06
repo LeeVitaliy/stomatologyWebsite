@@ -100,7 +100,7 @@ export default function Home() {
               <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" onClick={() => document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' })}>
                 Записаться на приём
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-black hover:bg-white/10">
+              <Button variant="outline" size="lg" className="border-white text-black hover:bg-white/10" onClick={() => document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' })}>
                 Узнать стоимость
               </Button>
             </div>
