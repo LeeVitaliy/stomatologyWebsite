@@ -86,7 +86,9 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 lg:pt-32 pb-16 px-4 gradient-bg text-white">
+
+ 
+      <section id="top" className="pt-24 lg:pt-32 pb-16 px-4 gradient-bg text-white">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
