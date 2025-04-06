@@ -28,6 +28,11 @@ export default function Home() {
     }
   };
 
+  // Закрытие меню при клике на любой пункт
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -51,13 +56,25 @@ export default function Home() {
               ? "absolute top-16 left-0 right-0 bg-background border-b p-4"
               : "hidden lg:flex"
           } lg:items-center lg:space-x-8`}>
-            <a href="#services" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+            <a
+              href="#services"
+              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              onClick={closeMenu} // Закрытие меню при клике
+            >
               Услуги
             </a>
-            <a href="#about" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+            <a
+              href="#about"
+              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              onClick={closeMenu} // Закрытие меню при клике
+            >
               О клинике
             </a>
-            <a href="#contacts" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
+            <a
+              href="#contacts"
+              className="block py-2 text-foreground/80 hover:text-foreground transition-colors"
+              onClick={closeMenu} // Закрытие меню при клике
+            >
               Контакты
             </a>
             <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity">
@@ -106,7 +123,7 @@ export default function Home() {
             Наши услуги
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+            {[ 
               {
                 title: "Лечение кариеса",
                 description: "Современные методы лечения с гарантией результата",
@@ -275,7 +292,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-semibold">Телефон</h3>
                     <p className="text-muted-foreground">
-                      +7 (999) 123-45-67
+                      +7 (999) 999-99-99
                     </p>
                   </div>
                 </div>
@@ -288,9 +305,9 @@ export default function Home() {
                     <Clock className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Режим работы</h3>
+                    <h3 className="font-semibold">Время работы</h3>
                     <p className="text-muted-foreground">
-                      Пн-Вс: 9:00 - 21:00
+                      Пн-Пт: 9:00 - 20:00, Сб: 10:00 - 18:00
                     </p>
                   </div>
                 </div>
@@ -299,13 +316,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-8 px-4 border-t">
-        <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 Стоматология. Все права защищены.</p>
-        </div>
-      </footer>
     </div>
   );
 }
