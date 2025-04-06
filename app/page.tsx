@@ -57,9 +57,6 @@ export default function Home() {
             <a href="#about" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
               О клинике
             </a>
-            <a href="#doctors" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
-              Врачи
-            </a>
             <a href="#contacts" className="block py-2 text-foreground/80 hover:text-foreground transition-colors">
               Контакты
             </a>
